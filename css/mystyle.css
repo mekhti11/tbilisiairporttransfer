@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Sansita:400i');
+@import url('https://fonts.googleapis.com/css?family=Amiko');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+footer{
+  margin-top: 30px;
+  color: white;
+  background-color: #222222;
+  padding: 10px;
+  box-shadow: 0 3px 10px #333;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+p{
+  color : white;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  margin: 0 auto;
+  padding-bottom: 40px
+}
+
+body{
+  background-color: white;
+  background: url(../images/white-wood.jpg) no-repeat center top;
+  background-size: cover;
+}
+.menu{
+  background-color: #222222;
+  padding: 10px;
+  box-shadow: 0 3px 10px #333;
+  margin: 10px;
+}
+.main{
+  box-shadow: 0 3px 10px #333;
+  padding: 10px;
+  margin: 10px;
+  height: 72px;
+}
+
+#main-page-nav{
+  font-size: 18px;
+  font-family: sans-serif;
+  font-style: oblique;
+  color: white;
+}
+
+#button-box{
+  color: rgba(255, 255, 255,0.9);
+  background-color: rgba(0, 187, 1, 1);
+  width: auto;
+  border: 1px none black;
+  margin: 10px;
+  padding: 10px;
+  display: inline-table;
+}
+
+#button-box:hover{
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.25),0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: rgba(255, 44, 44, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+a:link{
+  color: blue;
+}
+a:visited{
+  color: purple ;
+}
+a:active,a:hover{
+  color: red;
+}
+
+@media only screen and [max-width:400px] {
+  p{
+    font-size: 130%;
+  }
+
+}
+
+input[type=text], input[type=password], input[type=email], input[type=tel] {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=date]{
+
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.loginbtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.loginbtn:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: rgba(255, 44, 44, 1);
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+.box{
+  background-color: #222222;
+  padding: 10px;
+  box-shadow: 0 3px 10px #333;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 20px;
+}
+
+.rezh{
+  color: white;
+}
+
+.transfer-type{
+  height: 50px;
+  width: 26%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background:white;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: rgb(245,255,250);
+}
+
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+td, th {
+  padding: 6px;
+  border: 1px solid #bbb;
+  text-align: left;
+}
+th{
+  background: green;
+  font-size: 18px;
+  font-display: auto;
+}

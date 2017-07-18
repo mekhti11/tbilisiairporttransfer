@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/mystyle.css" rel="stylesheet" />
+    <link href="../css/bootstrap-theme.css" rel="stylesheet" />
+    <script src="../js/myscript.js" ></script>
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse main">
+      <div class="navbar-brand " href="" style="color : white;width:85%;">TBILISI AIRPORT TRANSFER
+      </div>
+        <p style="color : white;font-size:18px;">BlaBla Hotel <br>
+          <button class="btn">Log out</button>
+        </p>
+      <cart-summary />
+    </div>
+
+
+    <div class="menu">
+      <nav id="main-page-nav">
+        <a href="reservations.html" ><div id="button-box">Reservations</div></a>
+        <a href="newres.html" ><div id="button-box">New Reservation</div></a>
+        <a href="detsearch.html" ><div id="button-box">Detailed Search</div></a>
+      </nav>
+    </div>
+
+
+    <form class="box">
+      <h3 class="rezh">Book a Shuttle</h3>
+      <div class="container">
+
+        <h7 class="rezh">Begin Date:</h7>
+        <input type="date" name="transferdate" value="" style="margin-left:20px;width: 26%;">
+
+        <h7 class="rezh" style="margin-left : 80px;">Time :</h7>
+        <select class="transfer-type" style=" margin-left : 25px;width : 14%;">
+          <option value="00">00</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+        </select>
+        <select class="transfer-type" style="width : 14%;margin-left : 5px;">
+          <option value="00">00</option>
+          <option value="05">05</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+          <option value="30">30</option>
+          <option value="35">35</option>
+          <option value="40">40</option>
+          <option value="45">45</option>
+          <option value="50">50</option>
+          <option value="55">55</option>
+        </select><br>
+        <h7 class="rezh">End Date:</h7>
+        <input type="date" name="transferdate" value="" style="margin-left:30px;width: 26%;">
+
+        <h7 class="rezh" style="margin-left : 80px;">Time :</h7>
+        <select class="transfer-type" style=" margin-left : 25px;width : 14%;">
+          <option value="00">00</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+        </select>
+        <select class="transfer-type" style="width : 14%;margin-left : 5px;">
+          <option value="00">00</option>
+          <option value="05">05</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+          <option value="30">30</option>
+          <option value="35">35</option>
+          <option value="40">40</option>
+          <option value="45">45</option>
+          <option value="50">50</option>
+          <option value="55">55</option>
+        </select><br>
+
+        <h7 class="rezh">Transfer Type :</h7>
+        <select class="transfer-type" name="">
+          <option>All</option>
+          <option>Hotel to Airport</option>
+          <option>Airport to Hotel</option>
+        </select>
+
+        <h7 class="rezh" style="margin-left:80px;">Situation :</h7>
+        <select class="transfer-type" name="" style="margin-left:0px;">
+          <option>All</option>
+          <option>OK</option>
+          <option>Ready</option>
+        </select>
+
+        <button type="submit" class="btn primary-btn loginbtn" style="margin-left : 175px;width : 50%;">SEARCH</button>
+
+      </div>
+    </form>
+
+    <footer >
+      Address : asdadafsf asfafasf asfafa asfaf , Tbilisi , Georgia <br>
+      Phone   : +995 555 987 65 43 <br>
+      E-Mail  : info@tbilisiairporttransfer.com
+      <br><br><br>
+    </footer>
+  </body>
+</html>
