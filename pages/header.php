@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My Bookings</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -12,17 +12,17 @@
   </head>
   <body>
     <div class="navbar navbar-inverse main">
-      <div class="navbar-brand " href="" style="color : white;">TBILISI AIRPORT TRANSFER</div>
+      <div class="navbar-brand " href=""style="color : white;">TBILISI AIRPORT TRANSFER</div>
       <cart-summary />
     </div>
     <div class="menu">
       <nav id="main-page-nav">
-          <a href="../index.html" ><div id="button-box">Home</div></a>
-          <a href="bookashuttle.html"><div id="button-box">Book a Shuttle</div></a>
-          <a href="mybooking.html"><div id="button-box">My Booking</div></a>
-          <a href="aboutus.html"><div id="button-box">About Us</div></a>
-          <a href="contactus.html"><div id="button-box">Contact Us</div></a>
-          <a href="terms.html"><div id="button-box">Terms&Conditions</div></a>
+          <a href="../index.php" ><div id="button-box">Home</div></a>
+          <a href="bookashuttle.php"><div id="button-box">Book a Shuttle</div></a>
+          <a href="mybooking.php"><div id="button-box">My Booking</div></a>
+          <a href="aboutus.php"><div id="button-box">About Us</div></a>
+          <a href="contactus.php"><div id="button-box">Contact Us</div></a>
+          <a href="terms.php"><div id="button-box">Terms&Conditions</div></a>
           <button onclick="document.getElementById('id01').style.display='block'" id="button-box">
               Hotel Login
           </button>
@@ -49,29 +49,3 @@
         </div>
       </form>
     </div>
-
-    <div class="box">
-      <h3 class="rezh"> Find Your Booking </h3>
-
-      <h7 class="rezh">Name :</h7>
-      <input type="text" placeholder="Name Surname" name="uname" style="margin-left : 90px;" required><br>
-
-      <h7 class="rezh">E-Mail :</h7>
-      <input type="email" placeholder="Email" name="email" style="margin-left : 90px;" required><br>
-
-      <h7 class="rezh">Reservation Number :</h7>
-      <input type="text" placeholder="Reservation Number" name="uname" required><br>
-
-      <button type="submit" class="btn primary-btn loginbtn" style="margin-left : 250px;width : 50%;" > SEARCH </button>
-    </div>
-
-
-    <footer >
-      Address : asdadafsf asfafasf asfafa asfaf , Tbilisi , Georgia <br>
-      Phone   : +995 555 987 65 43 <br>
-      E-Mail  : info@tbilisiairporttransfer.com
-      <br><br><br>
-    </footer>
-
-  </body>
-</html>

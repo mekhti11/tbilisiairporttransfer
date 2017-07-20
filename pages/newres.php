@@ -1,34 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>New Reservation</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <link href="../css/bootstrap.css" rel="stylesheet" />
-    <link href="../css/mystyle.css" rel="stylesheet" />
-    <link href="../css/bootstrap-theme.css" rel="stylesheet" />
-    <script src="../js/myscript.js" ></script>
-  </head>
-  <body>
-    <div class="navbar navbar-inverse main">
-      <div class="navbar-brand " href="" style="color : white;width:85%;">TBILISI AIRPORT TRANSFER
-      </div>
-        <p style="color : white;font-size:18px;">BlaBla Hotel <br>
-          <button class="btn">Log out</button>
-        </p>
-      <cart-summary />
-    </div>
-
-
-    <div class="menu">
-      <nav id="main-page-nav">
-        <a href="reservations.html" ><div id="button-box">Reservations</div></a>
-        <a href="newres.html" ><div id="button-box">New Reservation</div></a>
-        <a href="detsearch.html" ><div id="button-box">Detailed Search</div></a>
-      </nav>
-    </div>
+<?php
+  include "hotelheader.php";
+ ?>
 
     <form class="box">
       <h3 class="rezh">New Reservation</h3>
@@ -112,11 +84,8 @@
       </div>
     </form>
 
-    <footer >
-      Address : asdadafsf asfafasf asfafa asfaf , Tbilisi , Georgia <br>
-      Phone   : +995 555 987 65 43 <br>
-      E-Mail  : info@tbilisiairporttransfer.com
-      <br><br><br>
-    </footer>
+    <?php
+      include "footer.php";
+     ?>
   </body>
 </html>

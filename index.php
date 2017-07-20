@@ -1,57 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>TBILISI AIRPORT TRANSFER</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/mystyle.css" rel="stylesheet" />
-    <link href="css/bootstrap-theme.css" rel="stylesheet" />
-    <script src="js/myscript.js" ></script>
-  </head>
-  <body>
-    <div class="navbar navbar-inverse main">
-      <div class="navbar-brand " href="" style="color : white;">TBILISI AIRPORT TRANSFER</div>
-      <cart-summary />
-    </div>
-    <div class="menu">
-      <nav id="main-page-nav">
-          <a href="index.html" ><div id="button-box">Home</div></a>
-          <a href="pages/bookashuttle.html"><div id="button-box">Book a Shuttle</div></a>
-          <a href="pages/mybooking.html"><div id="button-box">My Booking</div></a>
-          <a href="pages/aboutus.html"><div id="button-box">About Us</div></a>
-          <a href="pages/contactus.html"><div id="button-box">Contact Us</div></a>
-          <a href="pages/terms.html"><div id="button-box">Terms&Conditions</div></a>
-          <button onclick="document.getElementById('id01').style.display='block'" id="button-box">
-              Hotel Login
-          </button>
-        </nav>
-    </div>
+<?php
+  include "indexheader.php";
+?>
 
-    <div id="id01" class="modal">
-
-      <form class="modal-content animate" action="/action_page.php">
-        <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-          <img src="images/avatar.jpg" alt="Avatar" class="avatar">
-        </div>
-
-        <div class="container">
-          <input type="text" placeholder="Enter Hotel Username" name="uname" required>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-          <button type="submit" class="btn primary-btn loginbtn">Login</button>
-        </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
-    </div>
-
-    <form class="box">
+    <form class="box" action="php/islem.php" method="POST">
       <h3 class="rezh">Reserve a Private Transfer</h3>
       <div class="container">
 
@@ -110,23 +61,23 @@
         </select><br>
 
         <h7 class="rezh">Transfer Type :</h7>
-        <select class="transfer-type" name="">
+        <select class="transfer-type" name="transfertype">
           <option>Hotel to Airport</option>
           <option>Airport to Hotel</option>
         </select>
 
         <h7 class="rezh" style="margin-left : 75px;">Flight :</h7>
-        <input type="text" name="" value="" required style="width : 263px; margin-left : 10px;">
+        <input type="text" name="flight" value="" required style="width : 263px; margin-left : 10px;">
         <br>
 
         <h7 class="rezh" style="margin-left:20px;">Hotel :</h7>
-        <select class="transfer-type" style="margin-left:33px;margin-top:10px;" name="">
+        <select class="transfer-type" style="margin-left:33px;margin-top:10px;" name="hotelname">
           <option>Hotel A</option>
           <option>Hotel B</option>
         </select>
 
         <h7 class="rezh" style="margin-left:75px;">Person :</h7>
-        <input type="text" name="" value="1" required style="width : 263px;">
+        <input type="text" name="personnum" value="1" required style="width : 263px;">
 
         <button type="submit" class="btn primary-btn loginbtn" style="margin-left : 175px;width : 50%;">RESERVE</button>
 
