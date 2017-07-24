@@ -9,6 +9,8 @@
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/mystyle.css" rel="stylesheet" />
     <link href="../css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   </head>
   <body>
     <div class="navbar navbar-inverse main">
@@ -17,7 +19,7 @@
     </div>
     <div class="menu">
       <nav id="main-page-nav">
-          <a href="../index.php" ><div id="button-box">Home</div></a>
+          <a href="../index.php" ><div id="button-box"><i class="fa fa-home" aria-hidden="true"></i>Home</div></a>
           <a href="bookashuttle.php"><div id="button-box">Book a Shuttle</div></a>
           <a href="mybooking.php"><div id="button-box">My Booking</div></a>
           <a href="aboutus.php"><div id="button-box">About Us</div></a>

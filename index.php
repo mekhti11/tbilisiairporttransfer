@@ -79,7 +79,7 @@
         <h7 class="rezh" style="margin-left:75px;">Person :</h7>
         <input type="text" name="personnum" value="1" required style="width : 263px;">
 
-        <button type="submit" class="btn primary-btn loginbtn" style="margin-left : 175px;width : 50%;">RESERVE</button>
+        <button type="submit" name="privateekle" class="btn primary-btn loginbtn" style="margin-left : 175px;width : 50%;">RESERVE</button>
 
       </div>
     </form>

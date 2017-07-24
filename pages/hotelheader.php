@@ -11,6 +11,8 @@
     <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/mystyle.css" rel="stylesheet" />
     <link href="../css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <script src="../js/myscript.js" ></script>
   </head>
   <body>
