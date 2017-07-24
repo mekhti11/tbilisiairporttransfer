@@ -20,7 +20,7 @@
         <input type="date" name="transferdate" value="" style="margin-left:5px;width: 26%;">
 
         <h7 class="rezh" style="margin-left : 70px;">Shuttle Times :</h7>
-        <select class="transfer-type" style="width : 25%; ">
+        <select class="transfer-type" id="shuttletime">
           <option value="00">10 : 00</option>
           <option value="01">12 : 30</option>
           <option value="02">16 : 00</option>
@@ -35,7 +35,7 @@
         </select>
 
         <h7 class="rezh" style="margin-left : 75px;">Flight :</h7>
-        <input type="text" name="" value="" required style="width : 263px; margin-left : 10px;"><br>
+        <input type="text" name="" value="" required id="flight"><br>
 
         <h7 class="rezh" style="margin-left:20px;">Hotel :</h7>
         <select class="transfer-type" style="margin-left:33px;margin-top:10px;" name="">
@@ -44,7 +44,7 @@
         </select>
 
         <h7 class="rezh" style="margin-left:75px;">Person :</h7>
-        <input type="text" name="" value="1" required style="width : 263px;">
+        <input type="text" name="" value="1" required id="person">
 
         <button type="submit" class="btn primary-btn loginbtn" style="margin-left : 175px;width : 50%;">BOOK</button>
 
@@ -56,5 +56,3 @@
       include "footer.php";
      ?>
 
-  </body>
-</html>

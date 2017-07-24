@@ -16,10 +16,10 @@
         <input type="tel" placeholder="Phone" name="phonenum" required><br>
 
         <h7 class="rezh">Transfer Date:</h7>
-        <input type="date" name="transferdate" value="" style="margin-left:5px;width: 26%;">
+        <input type="date" name="transfer_date" value="" style="margin-left:5px;width: 26%;">
 
         <h7 class="rezh" style="margin-left : 70px;">Time :</h7>
-        <select class="transfer-type" style=" margin-left : 20px;width : 14%;">
+        <select class="transfer-type" name="hour" style=" margin-left : 20px;width : 14%;" >
           <option value="00">00</option>
           <option value="01">01</option>
           <option value="02">02</option>
@@ -45,7 +45,7 @@
           <option value="22">22</option>
           <option value="23">23</option>
         </select>
-        <select class="transfer-type" style="width : 14%;margin-left : 5px;">
+        <select class="transfer-type" name="minute" style="width : 14%;margin-left : 5px;">
           <option value="00">00</option>
           <option value="05">05</option>
           <option value="10">10</option>
@@ -61,25 +61,25 @@
         </select><br>
 
         <h7 class="rezh">Transfer Type :</h7>
-        <select class="transfer-type" name="transfertype">
+        <select class="transfer-type" name="transfer_type">
           <option>Hotel to Airport</option>
           <option>Airport to Hotel</option>
         </select>
 
         <h7 class="rezh" style="margin-left : 75px;">Flight :</h7>
-        <input type="text" name="flight" value="" required style="width : 263px; margin-left : 10px;">
+        <input type="text" name="flight" value="" id="flight" required >
         <br>
 
         <h7 class="rezh" style="margin-left:20px;">Hotel :</h7>
-        <select class="transfer-type" style="margin-left:33px;margin-top:10px;" name="hotelname">
+        <select class="transfer-type" style="margin-left:33px;margin-top:10px;" name="hotel_name">
           <option>Hotel A</option>
           <option>Hotel B</option>
         </select>
 
         <h7 class="rezh" style="margin-left:75px;">Person :</h7>
-        <input type="text" name="personnum" value="1" required style="width : 263px;">
+        <input type="number" name="personnum" value="1" id="person" required>
 
-        <button type="submit" name="privateekle" class="btn primary-btn loginbtn" style="margin-left : 175px;width : 50%;">RESERVE</button>
+        <button type="submit" name="reserveprivateshuttle" class="btn primary-btn loginbtn" style="margin-left : 175px;width : 50%;">RESERVE</button>
 
       </div>
     </form>
@@ -96,12 +96,7 @@
       </p>
     </div>
 
-    <footer >
-      Address : asdadafsf asfafasf asfafa asfaf , Tbilisi , Georgia <br>
-      Phone   : +995 555 987 65 43 <br>
-      E-Mail  : info@tbilisiairporttransfer.com
-      <br><br><br>
-    </footer>
+    <?php 
+      include "pages/footer.php";
+     ?>
 
-  </body>
-</html>

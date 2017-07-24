@@ -5,20 +5,14 @@
  $server = "localhost";
  $database = "tbilisishuttle";
 
- $connect = mysql_connect($server,$username,$password);
+ $conn = mysqli_connect($server,$username,$password,$database);
  //mysql_query("SET NAMES UTF8");
 
- if(!($connect)){
+ if(!($conn)){
      echo "Baglanti Hatali !!!";
      exit();
  }else{
      echo "Baglanti Basarili !!!";
  }
-
- $db = mysql_select_db($database);
- if(!($db))
-     echo "Database baglanti hatasi";
- else
-     echo "Database baglanti basarili";
 
  ?>

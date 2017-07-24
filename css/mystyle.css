@@ -4,14 +4,11 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 
 footer{
-  margin-top: 30px;
+  margin : 10px;
   color: white;
   background-color: #222222;
-  padding: 10px;
   box-shadow: 0 3px 10px #333;
-  margin-left: 10px;
-  margin-right: 10px;
-
+  position: relative;
 }
 
 p{
@@ -73,12 +70,7 @@ a:active,a:hover{
   color: red;
 }
 
-@media only screen and [max-width:400px] {
-  p{
-    font-size: 130%;
-  }
 
-}
 
 input[type=text], input[type=password], input[type=email], input[type=tel] {
     width: 75%;
@@ -248,5 +240,37 @@ td, th {
 th{
   background: green;
   font-size: 18px;
-  font-display: auto;
+}
+
+#flight{
+  width : 263px; 
+  margin-left : 10px;
+}
+
+#person{
+  width : 263px;
+}
+#shuttletime{
+  width: 25%;
+}
+
+#mybookingasd{
+  margin-left : 90px;
+}
+@media screen and (max-width: 1150px) {
+  #rezervationnum,#mybookingasd{
+    
+    width: 50%;
+  }
+  form{
+    float: none;
+    display: block;
+  }
+  #flight,#person{
+    width: 25%;
+  }
+  #shuttletime{
+    width: 20%;
+  }
+  
 }
