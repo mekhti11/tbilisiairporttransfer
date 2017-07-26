@@ -4,11 +4,10 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 
 footer{
-  margin : 10px;
+  margin : 20px;
   color: white;
   background-color: #222222;
   box-shadow: 0 3px 10px #333;
-  position: relative;
 }
 
 p{
@@ -60,11 +59,8 @@ body{
   color: rgba(255, 255, 255, 1);
 }
 
-a:link{
+a:link,a:visited{
   color: blue;
-}
-a:visited{
-  color: purple ;
 }
 a:active,a:hover{
   color: red;

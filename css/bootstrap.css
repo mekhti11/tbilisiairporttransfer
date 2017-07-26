@@ -220,8 +220,7 @@ table {
     background: transparent !important;
     box-shadow: none !important;
   }
-  a,
-  a:visited {
+  a,{
     text-decoration: underline;
   }
   a[href]:after {

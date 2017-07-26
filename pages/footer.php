@@ -14,7 +14,8 @@
   <div style ="margin-left : 15px;">
     Address : <?php echo $row['address'];?> <br>
     Phone   : <?php echo $row['phonenum'];?> <br>
-    E-Mail  : <?php echo $row['mail'];?>
+    E-Mail  : <?php echo $row['mail'];?> <br>
+    <?php echo $row['footer'];?>
     <br><br><br>
   </div>
 </footer>

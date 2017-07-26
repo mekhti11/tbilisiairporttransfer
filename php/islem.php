@@ -2,6 +2,8 @@
 
 include 'connect.php';
 
+
+
 if(isset($_POST['reserveprivateshuttle'])){
   $sql ="INSERT INTO `shuttle`(`name`, `mail`, `phone`, `private`, `hotel_name`, `transferdate`, 
                               `transfertime`, `transfertype`, `flight`, `personnum`) VALUES 
@@ -16,6 +18,17 @@ if(isset($_POST['reserveprivateshuttle'])){
   else
     header("Location:../index.php?reserveprivateshuttle=no");
   
+}
+
+
+
+if(isset($_POST['ayarkaydet'])){
+  $sql = "UPDATE `ayarlar` SET `title`='".$_POST['title']."',`phonenum`='".$_POST['phonenum']."',
+          `address`='".$_POST['address']."',`mail`='".$_POST['mail']."' WHERE 1";
+  if( mysqli_query($conn,$sql))
+    header("Location:../admin/ayarlar.php?ayarkaydet=ok");
+  else
+   header("Location:../admin/ayarlar.php?ayarkaydet=no");
 }
 
 ?>
