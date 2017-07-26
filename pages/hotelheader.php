@@ -1,10 +1,17 @@
-
+<?php
+  include '../php/connect.php';
+  ini_set('error_reporting', E_ALL|E_STRICT);
+  ini_set('display_errors', 1);
+  $sql = "SELECT * FROM ayarlar";
+  $result = mysqli_query($conn,$sql);
+  $row = mysqli_fetch_array($result);
+?>
 
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Search</title>
+    <title><?php echo $row['title'];?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>

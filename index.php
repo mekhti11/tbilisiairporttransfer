@@ -71,10 +71,7 @@
         <br>
 
         <h7 class="rezh" style="margin-left:20px;">Hotel :</h7>
-        <select class="transfer-type" style="margin-left:33px;margin-top:10px;" name="hotel_name">
-          <option>Hotel A</option>
-          <option>Hotel B</option>
-        </select>
+        <input type="text" class="transfer-type" style="margin-left:33px;margin-top:10px;width:26%;" name="hotel_name">
 
         <h7 class="rezh" style="margin-left:75px;">Person :</h7>
         <input type="number" name="personnum" value="1" id="person" required>
@@ -97,6 +94,6 @@
     </div>
 
     <?php 
-      include "pages/footer.php";
+      include "indexfooter.php";
      ?>
 
