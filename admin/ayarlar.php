@@ -24,7 +24,10 @@
                             ?>
                                 <h1 class="page-subhead-line">Ayarlar Başarıyla Güncellendi ...</h1>
                         <?php 
-                            }
+                            }else{
+                                ?>
+                                <h1 class="page-subhead-line">Site Ayarlarını Buradan Güncelleyebilirsiniz...</h1>   
+                          <?php   }
                         ?>
                     </div>
                 </div>

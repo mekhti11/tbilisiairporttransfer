@@ -1,0 +1,3 @@
+ if(! isset($_SESSION['kadi'])){
+    header("Location:pages/terms.php");
+  }

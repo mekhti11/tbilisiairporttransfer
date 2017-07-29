@@ -11,6 +11,7 @@
   $row = mysqli_fetch_array($result);
 ?>
 <footer>
+<br>
   <div style ="margin-left : 15px;">
     Address : <?php echo $row['address'];?> <br>
     Phone   : <?php echo $row['phonenum'];?> <br>
@@ -19,3 +20,5 @@
     <br><br><br>
   </div>
 </footer>
+
+

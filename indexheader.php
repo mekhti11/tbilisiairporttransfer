@@ -44,7 +44,7 @@
 
     <div id="id01" class="modal">
 
-      <form class="modal-content animate" action="php/islem.php" method="GET">
+      <form class="modal-content animate" action="php/islem.php" method="POST">
         <div class="imgcontainer">
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
           <img src="images/avatar.jpg" alt="Avatar" class="avatar">
@@ -53,12 +53,11 @@
         <div class="container">
           <input type="text" placeholder="Enter Hotel Username" name="uname" required>
           <input type="password" placeholder="Enter Password" name="psw" required>
-          <button type="submit" class="btn primary-btn loginbtn">Login</button>
+          <button type="submit" class="btn primary-btn loginbtn" name = "hotellogin">Login</button>
         </div>
 
         <div class="container" style="background-color:#f1f1f1">
           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
       </form>
     </div>

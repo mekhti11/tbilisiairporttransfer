@@ -16,7 +16,7 @@
         <input type="tel" placeholder="Phone" name="phonenum" required><br>
 
         <h7 class="rezh">Transfer Date:</h7>
-        <input type="date" name="transfer_date" value="" style="margin-left:5px;width: 26%;">
+        <input type="date" name="transfer_date" id="shootdate" style="margin-left:5px;width: 26%;" title="Choose your desired date" min="<?php echo date('Y-m-d'); ?>">
 
         <h7 class="rezh" style="margin-left : 70px;">Time :</h7>
         <select class="transfer-type" name="hour" style=" margin-left : 20px;width : 14%;" >

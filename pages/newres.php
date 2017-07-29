@@ -1,8 +1,9 @@
 <?php
+  session_start();
   include "hotelheader.php";
  ?>
 
-    <form class="box">
+    <form class="box" action="../php/islem.php" method="POST">
       <h3 class="rezh">New Reservation</h3>
       <div class="container">
 
@@ -16,10 +17,10 @@
         <input type="tel" placeholder="Phone" name="phonenum" required><br>
 
         <h7 class="rezh">Transfer Date:</h7>
-        <input type="date" name="transferdate" value="" style="margin-left:5px;width: 26%;">
+        <input type="date" name="transfer_date" value="" style="margin-left:5px;width: 26%;" title="Choose your desired date" min="<?php echo date('Y-m-d'); ?>">
 
         <h7 class="rezh" style="margin-left : 70px;">Time :</h7>
-        <select class="transfer-type" style=" margin-left : 20px;width : 14%;">
+        <select class="transfer-type" name="hour" style=" margin-left : 20px;width : 14%;">
           <option value="00">00</option>
           <option value="01">01</option>
           <option value="02">02</option>
@@ -45,7 +46,7 @@
           <option value="22">22</option>
           <option value="23">23</option>
         </select>
-        <select class="transfer-type" style="width : 14%;margin-left : 5px;">
+        <select class="transfer-type" name="minute" style="width : 14%;margin-left : 5px;">
           <option value="00">00</option>
           <option value="05">05</option>
           <option value="10">10</option>
@@ -61,25 +62,23 @@
         </select><br>
 
         <h7 class="rezh">Transfer Type :</h7>
-        <select class="transfer-type" name="">
+        <select class="transfer-type" name="transfer_type">
           <option>Hotel to Airport</option>
           <option>Airport to Hotel</option>
         </select>
 
         <h7 class="rezh" style="margin-left : 75px;">Flight :</h7>
-        <input type="text" name="" value="" required style="width : 263px; margin-left : 10px;">
+        <input type="text" name="flight" value="" required style="width : 263px; margin-left : 10px;">
         <br>
 
         <h7 class="rezh" style="margin-left:20px;">Hotel :</h7>
-        <select class="transfer-type" style="margin-left:33px;margin-top:10px;" name="">
-          <option>Hotel A</option>
-          <option>Hotel B</option>
-        </select>
+        <input class="transfer-type" style="margin-left:33px;margin-top:10px;" name="hotel_name"  placeholder="<?php echo $_SESSION['hotel_name']; ?>" disabled="">
+
 
         <h7 class="rezh" style="margin-left:75px;">Person :</h7>
-        <input type="text" name="" value="1" required style="width : 263px;">
+        <input type="number" name="personnum" value="1" required style="width : 263px;">
 
-        <button type="submit" class="btn primary-btn loginbtn" style="margin-left : 175px;width : 50%;">RESERVE</button>
+        <button type="submit" class="btn primary-btn loginbtn" name="hotel_reserveashuttle" style="margin-left : 175px;width : 50%;">RESERVE</button>
 
       </div>
     </form>

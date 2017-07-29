@@ -1,10 +1,13 @@
 <?php
+  session_start();
   include '../php/connect.php';
   ini_set('error_reporting', E_ALL|E_STRICT);
   ini_set('display_errors', 1);
   $sql = "SELECT * FROM ayarlar";
   $result = mysqli_query($conn,$sql);
   $row = mysqli_fetch_array($result);
+  if(! isset($_SESSION['hotel_name']))
+    header("Location:../index.php")
 ?>
 
 <!DOCTYPE html>
@@ -27,9 +30,9 @@
     <div class="navbar navbar-inverse main">
       <div class="navbar-brand " href="" style="color : white;width:85%;">TBILISI AIRPORT TRANSFER
       </div>
-        <p style="color : white;font-size:18px;">BlaBla Hotel <br>
-          <button class="btn">Log out</button>
-        </p>
+        <form method="POST" action="../php/islem.php" style="color : white;font-size:18px;"><?php echo $_SESSION['hotel_name'];?> <br>
+          <button name="hotel_logout" class="btn btn-danger">Log out</button>
+        </form>
       <cart-summary />
     </div>
 
